@@ -1,0 +1,9 @@
+<div *ngFor="let eachTask of listTask">
+  <div class="listOfTask">
+    <label style="color: #FFFFFF;">Name: {{ eachTask.name }}</label>
+    <br>
+    {{ eachTask.status }}
+    <br>
+    <button (click)="changeStatus(eachTask.id)" class="buttonStyle">Change status</button>
+  </div>
+</div>
